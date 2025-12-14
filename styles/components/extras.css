@@ -10,6 +10,11 @@
     padding-bottom: var(--size-base);
 }
 
+.contact__info a{
+    color: var(--clr-red);
+    text-decoration: underline;
+}
+
 /* Careers Styles */
 .no__jobs{
     display: flex;
