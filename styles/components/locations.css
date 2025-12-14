@@ -1,0 +1,64 @@
+#locations__landing .text__wrapper h2{
+    color: var(--clr-red);
+}
+
+.locations__wrapper h2{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.branch__cards__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.branch__card{
+    width:340px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-sm);
+    color: var(--clr-dark);
+    background-color: var(--clr-light);
+    padding-bottom: var(--size-sm);
+    border-radius: 1rem;
+}
+
+.branch__card > * {
+    padding-left: var(--size-sm);   
+    padding-right: var(--size-sm);   
+}
+
+.branch__card .image__container,
+.branch__card img{
+    padding-left: 0;
+    padding-right: 0;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.branch__card img:hover{
+    transform: scale(1.2);
+}
+
+.branch__card a{
+    color: #0c2dbd;
+    text-decoration: underline;    
+}
+
+.branch__card a:hover,
+.branch__card a:active{
+    color: var(--clr-orange);
+}
+
+@media (min-width: 768px) {
+    .branch__card{
+        width:400px;
+    }
+}   

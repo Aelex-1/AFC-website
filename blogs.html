@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://api.fontshare.com/v2/css?f[]=public-sans@400,500,600,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>afc-web</title>
+  </head>
+  <body>
+    <header class="header__bg ">
+      <div class="header container">     
+        <a href="index.html"><img class="header__logo" src="./assets/img/afc-logo.png" alt="AFC Logo"></a>
+        <nav>
+          <ul class="header__menu">
+            <li><a href="index.html" class="header__link">HOME</a></li>
+            <li><a href="about.html" class="header__link">ABOUT US</a></li>
+            <li><a href="franchise.html" class="header__link">FRANCHISE</a></li>
+            <li><a href="locations.html" class="header__link">LOCATIONS</a></li>
+            <li><a href="blogs.html" class="header__link active">BLOGS</a></li>
+          </ul>
+        </nav>
+
+        <a href="contact.html" class="btn btn__contact">Contact Us</a>
+        <button class="header__bar"><i class="fa-solid fa-bars fa-lg" onclick="openSidebar()"></i></button>
+      </div>
+    </header>
+
+    <div id="sidebar">
+      <button class="sidebar__close"><i class="fa-solid fa-x fa-lg" onclick="closeSidebar()"></i></button>
+      <nav class="sidebar__nav">
+          <ul>
+              <li><a href="index.html" class="sidebar__links" >Home</a></li>
+              <li><a href="about.html" class="sidebar__links">About Us</a></li>
+              <li><a href="franchise.html" class="sidebar__links">Franchise</a></li>
+              <li><a href="locations.html" class="sidebar__links">Locations</a></li>
+              <li><a href="blogs.html" class="sidebar__links active">Blogs</a></li>
+          </ul>
+      </nav>
+      <a href="contact.html" class="btn btn__contact">Contact Us</a>
+    </div>
+
+    <div class="sidebar__overlay" onclick="closeSidebar()"></div>
+    
+    <section id="featured__story" class="first__section">
+      <div class="container">
+        <div class="blog__wrapper">
+          <h2>FEATURED BLOG POST</h2>
+          <div class="blog__img__wrapper">
+            <img src="assets/img/featured.png" alt="featured image">
+          </div>
+          <div>
+            <h1>How to become a successful franchise owner in 7-steps</h1>
+            <p><strong>December 8, 2025</strong></p>
+          </div>
+          <div class="article__wrapper">
+            <p class="article__spacer">Becoming a successful franchise owner isn’t just about signing a contract — it’s about choosing the right brand, learning the system, and growing into a capable leader who can run a thriving business. In the case of Arthur’s Fried Chicken (AFC), franchise success comes from combining proven systems with local insight, strong people management, and consistent quality that keeps customers coming back. The steps below outline what aspiring franchisees need to understand and master in order to build a future-proof, profitable AFC branch in their community.</p>
+            <p>1. <Strong>Choose the right franchise fit</Strong></p>
+            <p class="article__spacer">Pick a franchisor and concept that match your goals, values, and local market. For AFC: make sure the neighborhood’s foot traffic, eating habits, and price sensitivity match AFC’s value-meal positioning. Choosing the right fit early saves time and money later.</p>
+            <p>2. <Strong>Do deep due diligence</Strong></p>
+            <p class="article__spacer">Carefully review franchise documents (contracts, fees, obligations), interview current franchisees, and verify the franchisor’s support structure and reputation. Ask for performance data and references.</p>
+            <p>3. <Strong>Secure proper financing & understand costs</Strong></p>
+            <p class="article__spacer">Know all upfront and ongoing costs (franchise fee, buildout, equipment, working capital, royalties) and arrange financing before committing. Build conservative financial projections that include slow-start months.</p>
+            <p>4. <Strong>Commit to training and follow the system</Strong></p>
+            <p class="article__spacer">Successful franchisees follow the brand’s operating system consistently. Use franchisor training, checklists, and SOPs to keep consistency (food quality, service, and cleanliness). </p>
+            <p>5. <Strong>Build a strong local team & lead well</Strong></p>
+            <p class="article__spacer">Your people make or break day-to-day operations. Hire dependable staff, invest in leadership development (managers/supervisors), and keep morale and performance high. Good leadership directly improves customer experience and retention.</p>
+            <p>6. <Strong>Master local marketing & community ties</Strong></p>
+            <p class="article__spacer">Drive customers through opening promotions, localized social media, community events, and partnerships (schools, offices, markets). Word-of-mouth in smaller cities/towns is huge — be visible and generous with samples/promos at launch.</p>
+            <p>7. <Strong>Measure, adapt, and lean on franchisor support</Strong></p>
+            <p class="article__spacer">Track sales, costs, and customer feedback. If something’s off, adapt quickly (menu tweaks, staffing changes, local promos). Maintain close communication with AFC HQ for supply, ops, and marketing help — don’t go it alone.</p>
+          </div>
+          
+
+        </div>
+      </div>
+    </section>
+
+    <section class="red__section">
+      <div class="container ">
+        <div class="blogs__top__wrapper">
+          <h2>Other Blogs</h2>
+        </div>
+        
+        <div class="swiper blogs-swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="image-wrapper">
+                <img src="assets/img/leadership.jpg" alt="pic">  
+              </div>
+              <div class="details-wrapper">
+                <h2>Building Stronger Leaders, Stronger Stores: AFC’s Ongoing Development Journey</h2>
+                <p>December 9, 2025</p>
+                <a href="post/development-journey.html" class="btn btn__cta">Read More</a>
+              </div>
+              
+            </div>
+            <div class="swiper-slide">
+              <div class="image-wrapper">
+                <img src="assets/img/2025-highlights.jpg" alt="pic">  
+              </div>
+              <div class="details-wrapper">
+                <h2>AFC 2025 Highlights</h2>
+                <p>December 14, 2025</p>
+                <a href="post/2025-highlights.html" class="btn btn__cta">Read More</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image-wrapper">
+                <img src="assets/img/no-entry.jpg" alt="pic">  
+              </div>
+              <div class="details-wrapper">
+                <h2>No blog entry yet</h2>
+                <p>Date</p>
+                <a href="" class="btn btn__cta">Read More</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image-wrapper">
+                <img src="assets/img/no-entry.jpg" alt="pic">  
+              </div>
+              <div class="details-wrapper">
+                <h2>No blog entry yet</h2>
+                <p>Date</p>
+                <a href="" class="btn btn__cta">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!--navigation-->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="red__section">
+      <div class="footer__wrapper container">
+        <div class="fb__links">
+          <h2>Follow us on Facebook!</h2>
+          <a href="https://www.facebook.com/arthursfriedchicken" target="_blank" class="btn btn__fb"><i class="fa-brands fa-facebook fa-xl"></i> AFC - Main</a>
+          <a href="https://www.facebook.com/profile.php?id=61550328491613" target="_blank" class="btn btn__fb"><i class="fa-brands fa-facebook fa-xl"></i> AFC - Davao</a>
+          <a href="https://www.facebook.com/59ersrestaurant" target="_blank" class="btn btn__fb"><i class="fa-brands fa-facebook fa-xl"></i> AFC - Cotabato</a>
+        </div>
+        
+        <div class="quick__links__wrapper">
+          <h2>Quick Links</h2>
+          <div class="quick__links">
+            <nav class="footer__nav">
+              <ul class="footer__menu">
+                <li><a href="index.html" class="footer__links">Home</a></li>
+                <li><a href="about.html" class="footer__links">About Us</a></li>
+                <li><a href="franchise.html" class="footer__links">Franchise</a></li>
+                <li><a href="locations.html" class="footer__links">Locations</a></li>
+                <li><a href="blogs.html" class="footer__links">Blogs</a></li>
+              </ul>
+            </nav>
+
+            <nav class="footer__nav">
+              <ul class="footer__menu">
+                <li><a href="privacy.html" class="footer__links">Privacy Policy</a></li>
+                <li><a href="terms.html" class="footer__links">Terms of Service</a></li>
+                <li><a href="careers.html" class="footer__links">Careers</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        
+      </div>
+      <div class="container">
+        <hr class="footer__divider">
+      </div>
+      <div class="container">
+        <p class="copyright__text">© 2025 Arthur's Fried Chicken. All rights reserved.</p>
+      </div>
+      
+    </footer>
+    
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

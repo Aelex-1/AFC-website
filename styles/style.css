@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Cooper';
+    src: url(assets/font/COOPBL.TTF);
+}
+
+:root{
+    --clr-red: #B51C1B;
+    --clr-orange: #F77E08;
+    --clr-yellow: #F6E538;
+    --clr-light: #F5F5F5;
+    --clr-dark: #141414;
+    --clr-dark-fade: #333333;
+
+    /* sizes */
+    --size-xs: 0.75rem;
+    --size-sm: 0.875rem;
+    --size-base: 1rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    line-height: calc(1em + 0.5rem);
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Public Sans', sans-serif;
+    background-color: var(--clr-light);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+ol{
+    list-style-position: inside;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+}
+
+button{
+    display: inline-block;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* three headers and a paragraph
+h1
+h2
+h3 */
+
+@media (min-width: 475px) {
+   html{
+        font-size: 100%;
+    }  
+}
+
+@media (min-width: 640px) {
+   html{
+        font-size: 102%;
+    }  
+}
+
+@media (min-width: 768px) {
+   html{
+        font-size: 105%;
+    }  
+}   
+
+@media (min-width: 1024px) {
+   html{
+        font-size: 110%;
+    }  
+}
+
+@media (min-width: 1280px) {
+   html{
+        font-size: 115%;
+    }  
+}
+
+@media (min-width: 1563px) {
+   html{
+        font-size: 120%;
+    }  
+}
+
+/* @media (min-width: 475px) {
+   
+}
+
+@media (min-width: 640px) {
+    
+}
+
+@media (min-width: 768px) {
+
+}   
+
+@media (min-width: 1024px) {
+    
+}
+
+@media (min-width: 1280px) {
+    
+}
+
+@media (min-width: 1563px) {
+    
+} */

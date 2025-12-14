@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png">
+    <link rel="manifest" href="../assets/img/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://api.fontshare.com/v2/css?f[]=public-sans@400,500,600,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>afc-web</title>
+  </head>
+  <body>
+    <header class="header__bg ">
+      <div class="header container">     
+        <a href="../index.html"><img class="header__logo" src="../assets/img/afc-logo.png" alt="AFC Logo"></a>
+        <nav>
+          <ul class="header__menu">
+            <li><a href="../index.html" class="header__link">HOME</a></li>
+            <li><a href="../about.html" class="header__link">ABOUT US</a></li>
+            <li><a href="../franchise.html" class="header__link">FRANCHISE</a></li>
+            <li><a href="../locations.html" class="header__link">LOCATIONS</a></li>
+            <li><a href="../blogs.html" class="header__link">BLOGS</a></li>
+          </ul>
+        </nav>
+
+        <a href="../contact.html" class="btn btn__contact">Contact Us</a>
+        <button class="header__bar"><i class="fa-solid fa-bars fa-lg" onclick="openSidebar()"></i></button>
+      </div>
+    </header>
+
+    <div id="sidebar">
+      <button class="sidebar__close"><i class="fa-solid fa-x fa-lg" onclick="closeSidebar()"></i></button>
+      <nav class="sidebar__nav">
+          <ul>
+              <li><a href="../index.html" class="sidebar__links" >Home</a></li>
+              <li><a href="../about.html" class="sidebar__links">About Us</a></li>
+              <li><a href="../franchise.html" class="sidebar__links">Franchise</a></li>
+              <li><a href="../locations.html" class="sidebar__links">Locations</a></li>
+              <li><a href="../blogs.html" class="sidebar__links">Blogs</a></li>
+          </ul>
+      </nav>
+      <a href="../contact.html" class="btn btn__contact">Contact Us</a>
+    </div>
+
+    <div class="sidebar__overlay" onclick="closeSidebar()"></div>
+    
+    <section id="featured__story" class="first__section">
+      <div class="container">
+        <div class="blog__wrapper post__img">
+          <div class="blog__img__wrapper">
+            <img src="../assets/img/2025-highlights.jpg" alt="featured image">
+          </div>
+          <div>
+            <h1>AFC 2025: A Year of Purpose, Progress, and People</h1>
+            <p><strong>December 14, 2025</strong></p>
+          </div>
+          <div class="article__wrapper">
+            <p class="article__spacer">The year 2025 marked another meaningful chapter in the journey of Arthur’s Fried Chicken. More than just milestones and dates, it was a year defined by people, growth, and a shared commitment to delivering Sulit Sarap experiences across every AFC branch. From celebrating long-serving team members to expanding our footprint and investing in leadership development, each moment reflected AFC’s dedication to building a stronger organization from the inside out.</p>
+            <p class="article__spacer">The year began on a high note in January with the Annual Employee Service Award Ceremony. This event honored the loyalty, dedication, and hard work of AFC employees who have consistently contributed to the company’s success. Recognizing service milestones reinforced AFC’s belief that its people are its greatest asset. The ceremony served as a reminder that sustainable growth starts with valuing those who make daily operations possible.</p>
+            <p class="article__spacer">May was a month of celebration and renewal. AFC Poblacion 3 marked its first anniversary, celebrating a year of serving the community with quality meals and consistent service. The milestone highlighted the branch’s steady growth and the strong support it has received from loyal customers. In the same month, AFC City Plaza officially reopened its doors, signaling a fresh start and renewed commitment to delivering the AFC experience. The reopening reflected resilience, adaptability, and AFC’s ability to move forward stronger after challenges.</p>
+            <p class="article__spacer">September brought another major milestone with the grand opening of AFC Poblacion 8 Home. Designed to serve as both a community hub and a symbol of AFC’s expanding presence, the new branch welcomed customers with excitement, giveaways, and the familiar taste that AFC is known for. The opening underscored the brand’s continued growth while staying rooted in its hometown of Midsayap, North Cotabato.</p>
+            <p class="article__spacer">The year concluded with a strong focus on people development through the Leadership Development Training held in November. This initiative brought together key personnel to strengthen leadership skills, align values, and prepare teams for the future. By investing in leadership and continuous learning, AFC reinforced its long-term vision of building future-ready stores led by empowered and capable individuals.</p>
+            <p class="article__spacer">Looking back, 2025 was a year that balanced expansion with reflection, celebration with responsibility, and growth with purpose. Every achievement—whether big or small—was made possible by the collective effort of AFC’s employees, partners, franchisees, and customers. As AFC moves forward, the lessons and successes of 2025 serve as a solid foundation for even greater milestones ahead.</p>
+            <p class="article__spacer">Arthur’s Fried Chicken remains committed to its mission of delivering quality food, meaningful experiences, and opportunities for growth—one branch, one team, and one community at a time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="red__section">
+      <div class="footer__wrapper container">
+        <div class="fb__links">
+          <h2>Follow us on Facebook!</h2>
+          <a href="https://www.facebook.com/arthursfriedchicken" target="_blank" class="btn btn__fb"><i class="fa-brands fa-facebook fa-xl"></i> AFC - Main</a>
+          <a href="https://www.facebook.com/profile.php?id=61550328491613" target="_blank" class="btn btn__fb"><i class="fa-brands fa-facebook fa-xl"></i> AFC - Davao</a>
+          <a href="https://www.facebook.com/59ersrestaurant" target="_blank" class="btn btn__fb"><i class="fa-brands fa-facebook fa-xl"></i> AFC - Cotabato</a>
+        </div>
+        
+        <div class="quick__links__wrapper">
+          <h2>Quick Links</h2>
+          <div class="quick__links">
+            <nav class="footer__nav">
+              <ul class="footer__menu">
+                <li><a href="../index.html" class="footer__links">Home</a></li>
+                <li><a href="../about.html" class="footer__links">About Us</a></li>
+                <li><a href="../franchise.html" class="footer__links">Franchise</a></li>
+                <li><a href="../locations.html" class="footer__links">Locations</a></li>
+                <li><a href="../blogs.html" class="footer__links">Blogs</a></li>
+              </ul>
+            </nav>
+
+            <nav class="footer__nav">
+              <ul class="footer__menu">
+                <li><a href="../privacy.html" class="footer__links">Privacy Policy</a></li>
+                <li><a href="../terms.html" class="footer__links">Terms of Service</a></li>
+                <li><a href="../careers.html" class="footer__links">Careers</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        
+      </div>
+      <div class="container">
+        <hr class="footer__divider">
+      </div>
+      <div class="container">
+        <p class="copyright__text">© 2025 Arthur's Fried Chicken. All rights reserved.</p>
+      </div>
+      
+    </footer>
+    
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

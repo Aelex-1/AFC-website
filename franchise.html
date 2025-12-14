@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://api.fontshare.com/v2/css?f[]=public-sans@400,500,600,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>afc-web</title>
+  </head>
+  <body>
+    <header class="header__bg ">
+      <div class="header container">     
+        <a href="index.html"><img class="header__logo" src="./assets/img/afc-logo.png" alt="AFC Logo"></a>
+        <nav>
+          <ul class="header__menu">
+            <li><a href="index.html" class="header__link">HOME</a></li>
+            <li><a href="about.html" class="header__link">ABOUT US</a></li>
+            <li><a href="franchise.html" class="header__link active">FRANCHISE</a></li>
+            <li><a href="locations.html" class="header__link">LOCATIONS</a></li>
+            <li><a href="blogs.html" class="header__link">BLOGS</a></li>
+          </ul>
+        </nav>
+
+        <a href="contact.html" class="btn btn__contact">Contact Us</a>
+        <button class="header__bar"><i class="fa-solid fa-bars fa-lg" onclick="openSidebar()"></i></button>
+      </div>
+    </header>
+
+    <div id="sidebar">
+      <button class="sidebar__close"><i class="fa-solid fa-x fa-lg" onclick="closeSidebar()"></i></button>
+      <nav class="sidebar__nav">
+          <ul>
+              <li><a href="index.html" class="sidebar__links" >Home</a></li>
+              <li><a href="about.html" class="sidebar__links">About Us</a></li>
+              <li><a href="franchise.html" class="sidebar__links active">Franchise</a></li>
+              <li><a href="locations.html" class="sidebar__links">Locations</a></li>
+              <li><a href="blogs.html" class="sidebar__links">Blogs</a></li>
+          </ul>
+      </nav>
+      <a href="contact.html" class="btn btn__contact">Contact Us</a>
+    </div>
+
+    <div class="sidebar__overlay" onclick="closeSidebar()"></div>
+    
+    <section id="franchise__hero" class="first__section">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfVyop_FXZts9x5oTP9zTixs1VHg78jO4fvrfAE0CBhtj7XIQ/viewform?usp=dialog" target="_blank" class="btn btn__apply"><span class="apply__cta">CLICK TO APPLY!</span></a>
+      <img class="mobile__img" src="assets/img/franchise-call-mobile.jpg" alt="franchise ad">
+      <img class="desktop__img" src="assets/img/franchise-call.png" alt="franchise ad">
+    </section>
+   
+    <section class="white__section">
+      <div class="container">
+        <div class="content__wrapper">
+          <img src="assets/img/franchise-staff.jpg" alt="afc fried chicken value meal">
+
+          <div class="text__wrapper">
+            <h2>FRANCHISE WITH AFC</h2>
+            <p>Franchising with AFC allows you to join a rapidly growing
+            brand known for its delicious and affordable fried
+            chicken. With our proven business model and
+            comprehensive support, you’ll have a smooth start
+            and ongoing success. Become part of the AFC family
+            and benefit from strong brand recognition and a loyal
+            customer base.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="store__package" class="red__section">
+      <div class="container">
+        <h2 class="package__header">STORE PACKAGE AND DESIGNS</h2>
+        <div class="package__wrapper">
+          <div class="package__cards">
+            <img src="assets/img/package-main.png" alt="franchise package">
+            <h2>AFC Deluxe Package</h2>
+            <p><strong>Lot Area: </strong>300 - 450 Square Meters. Not including parking lot space.</p>
+            <p><strong>Investment Capital: </strong>Php 8M minimum. Final cost varies.</p>
+          </div>
+          <div class="package__cards">
+            <img src="assets/img/package-lite.png" alt="franchise package">
+            <h2>AFC Lite Package</h2>
+            <p><strong>Lot Area: </strong>120 - 250 Square Meters. Not including parking lot space.</p>
+            <p><strong>Investment Capital: </strong>Php 4M minimum. Final cost varies.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="faq" class="white__section">
+      <div class="container">
+        <div class="faq__wrapper">
+          <h2>FREQUENTLY ASKED QUESTIONS</h2>
+        </div>
+        <details class="faq__details">
+          <summary>What are the initial franchise fees?</summary>
+          <div class="content__details">
+            <p>The initial franchise fee for AFC is Php 500,000.</p>
+          </div>
+        </details>
+        <details class="faq__details">
+          <summary>How much is the total investment capital required?</summary>
+          <p>The estimated investment capital ranges from ₱4.5 million to ₱7 million, depending on the location and store specifications.</p>
+        </details>
+        <details class="faq__details">
+          <summary>What is the royalty fee for AFC franchisees?</summary>
+          <p>AFC charges a 2% royalty fee.</p>
+        </details>
+        <details class="faq__details">
+          <summary>When can I expect a return on investment (ROI)?</summary>
+          <p>Return on investment typically occurs within 2 to 3 years, depending on various factors such as location, management, and market conditions.</p>
+        </details>
+      </div>
+    </section>
+    
+    <footer class="red__section">
+      <div class="footer__wrapper container">
+        <div class="fb__links">
+          <h2>Follow us on Facebook!</h2>
+          <a href="https://www.facebook.com/arthursfriedchicken" target="_blank" class="btn btn__fb"><i class="fa-brands fa-facebook fa-xl"></i> AFC - Main</a>
+          <a href="https://www.facebook.com/profile.php?id=61550328491613" target="_blank" class="btn btn__fb"><i class="fa-brands fa-facebook fa-xl"></i> AFC - Davao</a>
+          <a href="https://www.facebook.com/59ersrestaurant" target="_blank" class="btn btn__fb"><i class="fa-brands fa-facebook fa-xl"></i> AFC - Cotabato</a>
+        </div>
+        
+        <div class="quick__links__wrapper">
+          <h2>Quick Links</h2>
+          <div class="quick__links">
+            <nav class="footer__nav">
+              <ul class="footer__menu">
+                <li><a href="index.html" class="footer__links">Home</a></li>
+                <li><a href="about.html" class="footer__links">About Us</a></li>
+                <li><a href="franchise.html" class="footer__links">Franchise</a></li>
+                <li><a href="locations.html" class="footer__links">Locations</a></li>
+                <li><a href="blogs.html" class="footer__links">Blogs</a></li>
+              </ul>
+            </nav>
+
+            <nav class="footer__nav">
+              <ul class="footer__menu">
+                <li><a href="privacy.html" class="footer__links">Privacy Policy</a></li>
+                <li><a href="terms.html" class="footer__links">Terms of Service</a></li>
+                <li><a href="careers.html" class="footer__links">Careers</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        
+      </div>
+      <div class="container">
+        <hr class="footer__divider">
+      </div>
+      <div class="container">
+        <p class="copyright__text">© 2025 Arthur's Fried Chicken. All rights reserved.</p>
+      </div>
+      
+    </footer>
+    
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://api.fontshare.com/v2/css?f[]=public-sans@400,500,600,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <title>afc-web</title>
+  </head>
+  <body>
+    <header class="header__bg ">
+      <div class="header container">     
+        <a href="index.html"><img class="header__logo" src="./assets/img/afc-logo.png" alt="AFC Logo"></a>
+        <nav>
+          <ul class="header__menu">
+            <li><a href="index.html" class="header__link">HOME</a></li>
+            <li><a href="about.html" class="header__link">ABOUT US</a></li>
+            <li><a href="franchise.html" class="header__link">FRANCHISE</a></li>
+            <li><a href="locations.html" class="header__link">LOCATIONS</a></li>
+            <li><a href="blogs.html" class="header__link">BLOGS</a></li>
+          </ul>
+        </nav>
+
+        <a href="" class="btn btn__contact">Contact Us</a>
+        <button class="header__bar"><i class="fa-solid fa-bars fa-lg" onclick="openSidebar()"></i></button>
+      </div>
+    </header>
+
+    <div id="sidebar">
+      <button class="sidebar__close"><i class="fa-solid fa-x fa-lg" onclick="closeSidebar()"></i></button>
+      <nav class="sidebar__nav">
+          <ul>
+              <li><a href="index.html" class="sidebar__links" >Home</a></li>
+              <li><a href="about.html" class="sidebar__links">About Us</a></li>
+              <li><a href="franchise.html" class="sidebar__links">Franchise</a></li>
+              <li><a href="locations.html" class="sidebar__links">Locations</a></li>
+              <li><a href="blogs.html" class="sidebar__links">Blogs</a></li>
+          </ul>
+      </nav>
+      <a href="" class="btn btn__contact">Contact Us</a>
+    </div>
+
+    <div class="sidebar__overlay" onclick="closeSidebar()"></div>
+    
+    <section id="contact__page" class="first__section">
+      <div class="container">
+        <div class="contact__wrapper">
+          <div class="contact__info">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, concerns, or feedback, we'd love to hear from you! 
+              If you have any franchise questions that were not answered in the <a href="franchise.html#faq">FAQ page</a>, please don't hesitate to reach out.</p>
+          </div>
+          <div class="contact__info">
+            <h2>Contact Information</h2>
+            <p><strong>Address:</strong> Poblacion 8, Midsayap, North Cotabato 9410,
+            Philippines</p>
+            <p><strong>Phone:</strong> </p>
+            <p><strong>Email:</strong> afcfranchisingcorp@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="red__section">
+      <div class="footer__wrapper container">
+        <div class="fb__links">
+          <h2>Follow us on Facebook!</h2>
+          <a href="https://www.facebook.com/arthursfriedchicken" target="_blank" class="btn btn__fb"><i class="fa-brands fa-facebook fa-xl"></i> AFC - Main</a>
+          <a href="https://www.facebook.com/profile.php?id=61550328491613" target="_blank" class="btn btn__fb"><i class="fa-brands fa-facebook fa-xl"></i> AFC - Davao</a>
+          <a href="https://www.facebook.com/59ersrestaurant" target="_blank" class="btn btn__fb"><i class="fa-brands fa-facebook fa-xl"></i> AFC - Cotabato</a>
+        </div>
+        
+        <div class="quick__links__wrapper">
+          <h2>Quick Links</h2>
+          <div class="quick__links">
+            <nav class="footer__nav">
+              <ul class="footer__menu">
+                <li><a href="index.html" class="footer__links">Home</a></li>
+                <li><a href="about.html" class="footer__links">About Us</a></li>
+                <li><a href="franchise.html" class="footer__links">Franchise</a></li>
+                <li><a href="locations.html" class="footer__links">Locations</a></li>
+                <li><a href="blogs.html" class="footer__links">Blogs</a></li>
+              </ul>
+            </nav>
+
+            <nav class="footer__nav">
+              <ul class="footer__menu">
+                <li><a href="privacy.html" class="footer__links">Privacy Policy</a></li>
+                <li><a href="terms.html" class="footer__links">Terms of Service</a></li>
+                <li><a href="careers.html" class="footer__links">Careers</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        
+      </div>
+      <div class="container">
+        <hr class="footer__divider">
+      </div>
+      <div class="container">
+        <p class="copyright__text">© 2025 Arthur's Fried Chicken. All rights reserved.</p>
+      </div>
+      
+    </footer>
+    
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://api.fontshare.com/v2/css?f[]=public-sans@400,500,600,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>afc-web</title>
+  </head>
+  <body>
+    <header class="header__bg ">
+      <div class="header container">     
+        <a href="index.html"><img class="header__logo" src="./assets/img/afc-logo.png" alt="AFC Logo"></a>
+        <nav>
+          <ul class="header__menu">
+            <li><a href="index.html" class="header__link">HOME</a></li>
+            <li><a href="about.html" class="header__link active">ABOUT US</a></li>
+            <li><a href="franchise.html" class="header__link">FRANCHISE</a></li>
+            <li><a href="locations.html" class="header__link">LOCATIONS</a></li>
+            <li><a href="blogs.html" class="header__link">BLOGS</a></li>
+          </ul>
+        </nav>
+
+        <a href="contact.html" class="btn btn__contact">Contact Us</a>
+        <button class="header__bar"><i class="fa-solid fa-bars fa-lg" onclick="openSidebar()"></i></button>
+      </div>
+    </header>
+
+    <div id="sidebar">
+      <button class="sidebar__close"><i class="fa-solid fa-x fa-lg" onclick="closeSidebar()"></i></button>
+      <nav class="sidebar__nav">
+          <ul>
+              <li><a href="index.html" class="sidebar__links" >Home</a></li>
+              <li><a href="about.html" class="sidebar__links active">About Us</a></li>
+              <li><a href="franchise.html" class="sidebar__links">Franchise</a></li>
+              <li><a href="locations.html" class="sidebar__links">Locations</a></li>
+              <li><a href="blogs.html" class="sidebar__links">Blogs</a></li>
+          </ul>
+      </nav>
+      <a href="contact.html" class="btn btn__contact">Contact Us</a>
+    </div>
+
+    <div class="sidebar__overlay" onclick="closeSidebar()"></div>
+    
+    <section class="page__landing first__section">
+      <div class="container">
+        <div class="content__wrapper">
+          <img src="assets/img/about-first.png" alt="">
+          <div class="text__wrapper">
+            <nav class="about__nav">
+              <ul>
+                <li><a href="#who__we__are"><h2>Who We Are</h2></a></li>
+                <li><a href="#what__we__serve"><h2>What We Serve</h2></a></li>
+                <li><a href="#mission__and__vision"><h2>Mission and Vision</h2></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="who__we__are" class="red__section">
+      <div class="container">
+        <div class="content__wrapper">
+          <img src="assets/img/about-old.jpg" alt="afc fried chicken value meal">
+
+          <div class="text__wrapper">
+            <h2>AFC is Midsayap’s best fried chicken joint</h2>
+              <p>Our first home store was located in <strong>Quezon Avenue, Midsayap.</strong>
+                  But before being a staple for the masses, our growing enterprise
+                  began as a small fried chicken stall.
+              </p>
+              <p>
+                  Currently, we serve our customers in <strong>8 different locations in 
+                  Midsayap, Cotabato City, and Davao City. </strong>
+              </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="what__we__serve" class="white__section">
+      <div class="container">
+        <div class="content__wrapper">
+          <div class="swiper about-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/img/customer-1.jpg" alt="pic">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/customer-2.jpg" alt="pic">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/customer-3.jpg" alt="pic">
+              </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+          <div class="text__wrapper">
+            <h2> AFC serves happiness </h2>
+            <p>AFC proudly serves the best and most affordable 
+              <strong>SULIT SARAP FRIED CHICKEN!</strong> Enjoy our value meals 
+              with unlimited rice, a free drink, soup, and our 
+              signature chili garlic sauce.</p>
+            <p>Each meal is crafted to satisfy your hunger without 
+              breaking the bank. At AFC, we don't just serve food—
+              we deliver satisfaction and a memorable dining
+              experience every time you visit</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="mission__and__vision" class="red__section">
+      <div class="container">
+        <div class="content__wrapper">
+          <img src="assets/img/branch-map.png" alt="afc fried chicken value meal">
+          <div class="text__wrapper">
+            <h2>AFC will soon be available to Visayas and Luzon</h2>
+            <p>Our expanding franchise is now proudly serving communities across
+                Mindanao. Our mission is to bring our delicious fried chicken to every
+                corner of Luzon and Visayas as well.
+            </p>
+            <p>Before we embark on that journey, our immediate goal is to establish
+                even more branches across Mindanao's cities. With rapid growth on
+                the horizon, we invite you to join us on this exciting path to success.
+            </p>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="red__section">
+      <div class="footer__wrapper container">
+        <div class="fb__links">
+          <h2>Follow us on Facebook!</h2>
+          <a href="https://www.facebook.com/arthursfriedchicken" target="_blank" class="btn btn__fb"><i class="fa-brands fa-facebook fa-xl"></i> AFC - Main</a>
+          <a href="https://www.facebook.com/profile.php?id=61550328491613" target="_blank" class="btn btn__fb"><i class="fa-brands fa-facebook fa-xl"></i> AFC - Davao</a>
+          <a href="https://www.facebook.com/59ersrestaurant" target="_blank" class="btn btn__fb"><i class="fa-brands fa-facebook fa-xl"></i> AFC - Cotabato</a>
+        </div>
+        
+        <div class="quick__links__wrapper">
+          <h2>Quick Links</h2>
+          <div class="quick__links">
+            <nav class="footer__nav">
+              <ul class="footer__menu">
+                <li><a href="index.html" class="footer__links">Home</a></li>
+                <li><a href="about.html" class="footer__links">About Us</a></li>
+                <li><a href="franchise.html" class="footer__links">Franchise</a></li>
+                <li><a href="locations.html" class="footer__links">Locations</a></li>
+                <li><a href="blogs.html" class="footer__links">Blogs</a></li>
+              </ul>
+            </nav>
+
+            <nav class="footer__nav">
+              <ul class="footer__menu">
+                <li><a href="privacy.html" class="footer__links">Privacy Policy</a></li>
+                <li><a href="terms.html" class="footer__links">Terms of Service</a></li>
+                <li><a href="careers.html" class="footer__links">Careers</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        
+      </div>
+      <div class="container">
+        <hr class="footer__divider">
+      </div>
+      <div class="container">
+        <p class="copyright__text">© 2025 Arthur's Fried Chicken. All rights reserved.</p>
+      </div>
+      
+    </footer>
+    
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,237 @@
+<!-- Made by Aelex Aquino
+ Reach me through: aelexaquino@gmail.com -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/assets/img/afc-favicon.svg" /> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://api.fontshare.com/v2/css?f[]=public-sans@400,500,600,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>afc-web</title>
+  </head>
+  <body>
+    <header class="header__bg ">
+      <div class="header container">     
+        <a href="index.html"><img class="header__logo" src="./assets/img/afc-logo.png" alt="AFC Logo"></a>
+        <nav>
+          <ul class="header__menu">
+            <li><a href="index.html" class="header__link active">HOME</a></li>
+            <li><a href="about.html" class="header__link">ABOUT US</a></li>
+            <li><a href="franchise.html" class="header__link">FRANCHISE</a></li>
+            <li><a href="locations.html" class="header__link">LOCATIONS</a></li>
+            <li><a href="blogs.html" class="header__link">BLOGS</a></li>
+          </ul>
+        </nav>
+
+        <a href="contact.html" class="btn btn__contact">Contact Us</a>
+        <button class="header__bar"><i class="fa-solid fa-bars fa-lg" onclick="openSidebar()"></i></button>
+      </div>
+    </header>
+
+    <div id="sidebar">
+      
+      <button class="sidebar__close"><i class="fa-solid fa-x fa-lg" onclick="closeSidebar()"></i></button>
+      <nav class="sidebar__nav">
+          <ul>
+              <li><a href="index.html" class="sidebar__links active" >Home</a></li>
+              <li><a href="about.html" class="sidebar__links">About Us</a></li>
+              <li><a href="franchise.html" class="sidebar__links">Franchise</a></li>
+              <li><a href="locations.html" class="sidebar__links">Locations</a></li>
+              <li><a href="blogs.html" class="sidebar__links">Blogs</a></li>
+          </ul>
+      </nav>
+      <a href="contact.html" class="btn btn__contact">Contact Us</a>
+    </div>
+
+    <div class="sidebar__overlay" onclick="closeSidebar()"></div>
+    
+    <section class="first__section">
+      <div class="swiper home-swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="mobile-ver" src="assets/img/home-xmas-mobile.png" alt="pic">
+            <img class="desktop-ver" src="assets/img/home-xmas-wide.png" alt="pic">
+          </div>
+          <div class="swiper-slide">
+            <img class="mobile-ver" src="assets/img/home-bbq-mobile.png" alt="pic">
+            <img class="desktop-ver" src="assets/img/home-bbq-wide.png" alt="pic">
+          </div>
+          <div class="swiper-slide">
+            <img class="mobile-ver" src="assets/img/home-sisig-mobile.png" alt="pic">
+            <img class="desktop-ver" src="assets/img/home-sisig-wide.png" alt="pic">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <!--navigation-->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <section class="white__section">
+      <div class="container">
+        <div class="content__wrapper">
+          <img src="assets/img/fc.png" alt="afc fried chicken value meal">
+
+          <div class="text__wrapper">
+            <span class="AFC__txt">Arthur's Fried Chicken</span>
+            <h2>Try our Sulit Sarap Value Meals at your nearest AFC store.</h2>
+            <a href="locations.html" class="btn btn__cta">See Locations</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="red__section">
+      <div class="container">
+        <div class="content__wrapper">
+          <img src="assets/img/about-us.png" alt="afc fried chicken value meal">
+
+          <div class="text__wrapper">
+            <h2>ABOUT US</h2>
+            <p><strong>Arthur’s Fried Chicken</strong> is a beloved local restaurant
+                committed to serving the best and most affordable
+                fried chicken to the Filipino community.
+                What began as a small store with space for just
+                twenty customers has now grown into a thriving
+                enterprise with 8 branches across Mindanao
+                and more are to come soon.</p>
+              <a href="about.html" class="btn btn__cta">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="white__section">
+      <div class="container">
+        <div class="content__wrapper">
+          <img src="assets/img/new-store.png" alt="afc fried chicken value meal">
+
+          <div class="text__wrapper">
+            <h2>FRANCHISING</h2>
+            <p>Join the AFC family and be part of our rapid
+            growth across Mindanao! Don't miss your chance
+            to bring our irresistible <strong>Sulit Sarap Fried Chicken</strong>
+            to your community—contact us today to 
+            learn more!.</p>
+            <a href="franchise.html" class="btn btn__cta">Franchise Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="red__section">
+      <div class="container ">
+        <div class="blogs__top__wrapper">
+          <div class="blogs__text_wrapper">
+            <h2>BLOGS</h2>
+            <p>Discover our latest blogs for you!</p>
+          </div>
+          <a href="" class="btn btn__cta">View All</a>
+        </div>
+        
+        <div class="swiper blogs-swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="image-wrapper">
+                <img src="assets/img/featured.png" alt="pic">  
+              </div>
+              <div class="details-wrapper">
+                <h2>How to become a successful franchise owner in 7-steps</h2>
+                <p>December 8, 2025</p>
+                <a href="blogs.html" class="btn btn__cta">Read More</a>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="image-wrapper">
+                <img src="assets/img/leadership.jpg" alt="pic">  
+              </div>
+              <div class="details-wrapper">
+                <h2>Building Stronger Leaders, Stronger Stores: AFC’s Ongoing Development Journey</h2>
+                <p>December 9, 2025</p>
+                <a href="post/development-journey.html" class="btn btn__cta">Read More</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image-wrapper">
+                <img src="assets/img/2025-highlights.jpg" alt="pic">  
+              </div>
+              <div class="details-wrapper">
+                <h2>AFC 2025 Highlights</h2>
+                <p>December 14, 2025</p>
+                <a href="post/2025-highlights.html" class="btn btn__cta">Read More</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image-wrapper">
+                <img src="assets/img/no-entry.jpg" alt="pic">  
+              </div>
+              <div class="details-wrapper">
+                <h2>No blog entry yet</h2>
+                <p>Date</p>
+                <a href="" class="btn btn__cta">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!--navigation-->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="red__section">
+      <div class="footer__wrapper container">
+        <div class="fb__links">
+          <h2>Follow us on Facebook!</h2>
+          <a href="https://www.facebook.com/arthursfriedchicken" target="_blank" class="btn btn__fb"><i class="fa-brands fa-facebook fa-xl"></i> AFC - Main</a>
+          <a href="https://www.facebook.com/profile.php?id=61550328491613" target="_blank" class="btn btn__fb"><i class="fa-brands fa-facebook fa-xl"></i> AFC - Davao</a>
+          <a href="https://www.facebook.com/59ersrestaurant" target="_blank" class="btn btn__fb"><i class="fa-brands fa-facebook fa-xl"></i> AFC - Cotabato</a>
+        </div>
+        
+        <div class="quick__links__wrapper">
+          <h2>Quick Links</h2>
+          <div class="quick__links">
+            <nav class="footer__nav">
+              <ul class="footer__menu">
+                <li><a href="index.html" class="footer__links">Home</a></li>
+                <li><a href="about.html" class="footer__links">About Us</a></li>
+                <li><a href="franchise.html" class="footer__links">Franchise</a></li>
+                <li><a href="locations.html" class="footer__links">Locations</a></li>
+                <li><a href="blogs.html" class="footer__links">Blogs</a></li>
+              </ul>
+            </nav>
+
+            <nav class="footer__nav">
+              <ul class="footer__menu">
+                <li><a href="privacy.html" class="footer__links">Privacy Policy</a></li>
+                <li><a href="terms.html" class="footer__links">Terms of Service</a></li>
+                <li><a href="careers.html" class="footer__links">Careers</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <hr class="footer__divider">
+      </div>
+      <div class="container">
+        <p class="copyright__text">© 2025 Arthur's Fried Chicken. All rights reserved.</p>
+      </div>
+      
+    </footer>
+    
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

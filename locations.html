@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://api.fontshare.com/v2/css?f[]=public-sans@400,500,600,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>afc-web</title>
+  </head>
+  <body>
+    <header class="header__bg ">
+      <div class="header container">     
+        <a href="index.html"><img class="header__logo" src="./assets/img/afc-logo.png" alt="AFC Logo"></a>
+        <nav>
+          <ul class="header__menu">
+            <li><a href="index.html" class="header__link">HOME</a></li>
+            <li><a href="about.html" class="header__link">ABOUT US</a></li>
+            <li><a href="franchise.html" class="header__link">FRANCHISE</a></li>
+            <li><a href="locations.html" class="header__link active">LOCATIONS</a></li>
+            <li><a href="blogs.html" class="header__link">BLOGS</a></li>
+          </ul>
+        </nav>
+
+        <a href="contact.html" class="btn btn__contact">Contact Us</a>
+        <button class="header__bar"><i class="fa-solid fa-bars fa-lg" onclick="openSidebar()"></i></button>
+      </div>
+    </header>
+
+    <div id="sidebar">
+      <button class="sidebar__close"><i class="fa-solid fa-x fa-lg" onclick="closeSidebar()"></i></button>
+      <nav class="sidebar__nav">
+          <ul>
+              <li><a href="index.html" class="sidebar__links" >Home</a></li>
+              <li><a href="about.html" class="sidebar__links">About Us</a></li>
+              <li><a href="franchise.html" class="sidebar__links">Franchise</a></li>
+              <li><a href="locations.html" class="sidebar__links active">Locations</a></li>
+              <li><a href="blogs.html" class="sidebar__links">Blogs</a></li>
+          </ul>
+      </nav>
+      <a href="contact.html" class="btn btn__contact">Contact Us</a>
+    </div>
+
+    <div class="sidebar__overlay" onclick="closeSidebar()"></div>
+    
+    <section id="locations__landing" class="page__landing first__section">
+      <div class="container">
+        <div class="content__wrapper">
+          <img src="assets/img/location-1.png" alt="">
+          <div class="text__wrapper">
+            <h2>AFC stores are open Monday to Sunday for dine-in and takeout. Certain holidays may affect this schedule.</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="red__section">
+      <div class="container">
+        <div class="locations__wrapper">
+          <h2>Craving delicious fried chicken? Find your nearest AFC branch below!</h2>
+          <div class="branch__cards__wrapper">
+            <!-- pob8 home -->
+            <div class="branch__card">
+              <div class="image__container">
+                <img src="assets/img/home-card.jpg" alt="AFC Home Branch">
+              </div>
+              <h3>AFC Home</h3>
+              <p><strong>Address:</strong> Quezon Avenue, Poblacion 8 <br>
+              Midsayap, North Cotabato</p>
+              <p><strong>Hours:</strong> 7:00 AM - 10:00 PM</p>
+              <a href="https://maps.app.goo.gl/6uATqqwddGTyx7zH9" target="_blank">View on Map</a>
+            </div>
+            <!-- pob3 -->
+            <div class="branch__card">
+              <div class="image__container">
+                <img src="assets/img/pob3-card.jpg" alt="AFC Poblacion 3 Branch">
+              </div>
+              <h3>AFC Poblacion 3</h3>
+              <p><strong>Address:</strong> Rizal Street, Poblacion 3 <br>
+              Midsayap, North Cotabato</p>
+              <p><strong>Hours:</strong> 7:00 AM - 10:00 PM</p>
+              <a href="https://maps.app.goo.gl/t4v2oT3UdkWG6RiA8" target="_blank">View on Map</a>
+            </div>
+            <!-- hillpark -->
+            <div class="branch__card">
+              <div class="image__container">
+                <img src="assets/img/hillpark-card.jpg" alt="AFC Hillpark Branch">
+              </div>
+              <h3>AFC Hillpark</h3>
+              <p><strong>Address:</strong> Hillpark, Quezon Avenue <br>
+              Midsayap, North Cotabato</p>
+              <p><strong>Hours:</strong> 7:00 AM - 10:00 PM</p>
+              <a href="https://maps.app.goo.gl/TnoowjeXZvYEf9Tp8" target="_blank">View on Map</a>
+            </div>
+            <!-- market -->
+            <div class="branch__card">
+              <div class="image__container">
+                <img src="assets/img/market-card.jpg" alt="AFC Market Branch">
+              </div>
+              <h3>AFC Market</h3>
+              <p><strong>Address:</strong> Jaycee Avenue <br>
+              Midsayap, North Cotabato</p>
+              <p><strong>Hours:</strong> 7:00 AM - 10:00 PM</p>
+              <a href="https://maps.app.goo.gl/MPLoNhZEva9tHtC68" target="_blank">View on Map</a>
+            </div>
+            <!-- awang -->
+            <div class="branch__card">
+              <div class="image__container">
+                <img src="assets/img/awang-card.jpg" alt="AFC Awang Branch">
+              </div>
+              <h3>AFC Awang</h3>
+              <p><strong>Address:</strong> Barangay Awang, DOS <br>
+              Maguindanao del Norte</p>
+              <p><strong>Hours:</strong> 7:00 AM - 10:00 PM</p>
+              <a href="https://maps.app.goo.gl/2JU8K4ckKW3aK3s38" target="_blank">View on Map</a>
+            </div>
+            <!-- City Plaza -->
+            <div class="branch__card">
+              <div class="image__container">
+                <img src="assets/img/plaza-card.jpg" alt="AFC City Plaza Branch">
+              </div>
+              <h3>AFC City Plaza</h3>
+              <p><strong>Address:</strong> Don Rufino, Alonzo Street <br>
+              Cotabato City</p>
+              <p><strong>Hours:</strong> 8:00 AM - 10:00 PM</p>
+              <a href="https://maps.app.goo.gl/rvixe8eb4ZTCevZu6" target="_blank">View on Map</a>
+            </div>
+            <!-- ORC -->
+            <div class="branch__card">
+              <div class="image__container">
+                <img src="assets/img/orc-card.jpg" alt="AFC ORC Branch">
+              </div>
+              <h3>AFC ORC</h3>
+              <p><strong>Address:</strong> Gutierrez Street, ORC <br>
+              Cotabato City</p>
+              <p><strong>Hours:</strong> 8:00 AM - 10:00 PM</p>
+              <a href="https://maps.app.goo.gl/BDBeouEk2Tf99K1J7" target="_blank">View on Map</a>
+            </div>
+            <!-- mintal -->
+            <div class="branch__card">
+              <div class="image__container">
+                <img src="assets/img/mintal-card.jpg" alt="AFC Mintal Branch">
+              </div>
+              <h3>AFC Mintal</h3>
+              <p><strong>Address:</strong> Quezon Avenue, Poblacion 8 <br>
+              Midsayap, North Cotabato</p>
+              <p><strong>Hours:</strong> 7:00 AM - 10:00 PM</p>
+              <a href="https://maps.app.goo.gl/qQ5aEcrQd1G7Ewhc7" target="_blank">View on Map</a>
+            </div>
+ 
+          </div>
+        </div>
+
+      </div>
+    </section>
+    
+    <footer class="red__section">
+      <div class="footer__wrapper container">
+        <div class="fb__links">
+          <h2>Follow us on Facebook!</h2>
+          <a href="https://www.facebook.com/arthursfriedchicken" target="_blank" class="btn btn__fb"><i class="fa-brands fa-facebook fa-xl"></i> AFC - Main</a>
+          <a href="https://www.facebook.com/profile.php?id=61550328491613" target="_blank" class="btn btn__fb"><i class="fa-brands fa-facebook fa-xl"></i> AFC - Davao</a>
+          <a href="https://www.facebook.com/59ersrestaurant" target="_blank" class="btn btn__fb"><i class="fa-brands fa-facebook fa-xl"></i> AFC - Cotabato</a>
+        </div>
+        
+        <div class="quick__links__wrapper">
+          <h2>Quick Links</h2>
+          <div class="quick__links">
+            <nav class="footer__nav">
+              <ul class="footer__menu">
+                <li><a href="index.html" class="footer__links">Home</a></li>
+                <li><a href="about.html" class="footer__links">About Us</a></li>
+                <li><a href="franchise.html" class="footer__links">Franchise</a></li>
+                <li><a href="locations.html" class="footer__links">Locations</a></li>
+                <li><a href="blogs.html" class="footer__links">Blogs</a></li>
+              </ul>
+            </nav>
+
+            <nav class="footer__nav">
+              <ul class="footer__menu">
+                <li><a href="privacy.html" class="footer__links">Privacy Policy</a></li>
+                <li><a href="terms.html" class="footer__links">Terms of Service</a></li>
+                <li><a href="careers.html" class="footer__links">Careers</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        
+      </div>
+      <div class="container">
+        <hr class="footer__divider">
+      </div>
+      <div class="container">
+        <p class="copyright__text">© 2025 Arthur's Fried Chicken. All rights reserved.</p>
+      </div>
+      
+    </footer>
+    
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

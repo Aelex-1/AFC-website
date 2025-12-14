@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://api.fontshare.com/v2/css?f[]=public-sans@400,500,600,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>afc-web</title>
+  </head>
+  <body>
+    <header class="header__bg ">
+      <div class="header container">     
+        <a href="index.html"><img class="header__logo" src="./assets/img/afc-logo.png" alt="AFC Logo"></a>
+        <nav>
+          <ul class="header__menu">
+            <li><a href="index.html" class="header__link">HOME</a></li>
+            <li><a href="about.html" class="header__link">ABOUT US</a></li>
+            <li><a href="franchise.html" class="header__link">FRANCHISE</a></li>
+            <li><a href="locations.html" class="header__link">LOCATIONS</a></li>
+            <li><a href="blogs.html" class="header__link">BLOGS</a></li>
+          </ul>
+        </nav>
+
+        <a href="contact.html" class="btn btn__contact">Contact Us</a>
+        <button class="header__bar"><i class="fa-solid fa-bars fa-lg" onclick="openSidebar()"></i></button>
+      </div>
+    </header>
+
+    <div id="sidebar">
+      <button class="sidebar__close"><i class="fa-solid fa-x fa-lg" onclick="closeSidebar()"></i></button>
+      <nav class="sidebar__nav">
+          <ul>
+              <li><a href="index.html" class="sidebar__links" >Home</a></li>
+              <li><a href="about.html" class="sidebar__links">About Us</a></li>
+              <li><a href="franchise.html" class="sidebar__links">Franchise</a></li>
+              <li><a href="locations.html" class="sidebar__links">Locations</a></li>
+              <li><a href="blogs.html" class="sidebar__links">Blogs</a></li>
+          </ul>
+      </nav>
+      <a href="contact.html" class="btn btn__contact">Contact Us</a>
+    </div>
+
+    <div class="sidebar__overlay" onclick="closeSidebar()"></div>
+    
+    <section id="terms__privacy" class="first__section">
+      <div class="container">
+        <div>
+          <h1>TERMS OF SERVICE</h1>
+          <p><strong>Last updated December 9, 2025</strong></p>
+        </div>
+
+        <h2>AGREEMENT TO OUR LEGAL TERMS</h2>
+        <p>We are <strong>Arthur's Fried Chicken</strong>, doing business as <strong>AFC</strong> ("Company," "we," "us," "our"), a company registered in the Philippines at Poblacion 8, Midsayap, North Cotabato 9410.</p>
+        <p>We operate the website <a href="http://www.arthursfriedchicken.com">http://www.arthursfriedchicken.com</a> (the "Site"), as well as any other related products and services that refer or link to these legal terms (the "Legal Terms") (collectively, the "Services").</p>
+        <p>You can contact us by phone at 0932128108, email at <a href="mailto:afcfranchisingcorp@gmail.com">afcfranchisingcorp@gmail.com</a>, or by mail to Poblacion 8, Midsayap, North Cotabato 9410, Philippines.</p>
+        <p>These Legal Terms constitute a legally binding agreement made between you, whether personally or on behalf of an entity ("you"), and Arthur's Fried Chicken, concerning your access to and use of the Services. You agree that by accessing the Services, you have read, understood, and agreed to be bound by all of these Legal Terms. IF YOU DO NOT AGREE WITH ALL OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SERVICES AND YOU MUST DISCONTINUE USE IMMEDIATELY.</p>
+        <p>The Services are intended for users who are at least 18 years old. Persons under the age of 18 are not permitted to use or register for the Services.</p>
+        <p>We recommend that you print a copy of these Legal Terms for your records.</p>
+
+        <h2>TABLE OF CONTENTS</h2>
+        <ol>
+            <li><a href="#services">OUR SERVICES</a></li>
+            <li><a href="#ip">INTELLECTUAL PROPERTY RIGHTS</a></li>
+            <li><a href="#userreps">USER REPRESENTATIONS</a></li>
+            <li><a href="#prohibited">PROHIBITED ACTIVITIES</a></li>
+            <li><a href="#ugc">USER GENERATED CONTRIBUTIONS</a></li>
+            <li><a href="#license">CONTRIBUTION LICENSE</a></li>
+            <li><a href="#thirdparty">THIRD-PARTY WEBSITES AND CONTENT</a></li>
+            <li><a href="#sitemanage">SERVICES MANAGEMENT</a></li>
+            <li><a href="#ppyes">PRIVACY POLICY</a></li>
+            <li><a href="#terms">TERM AND TERMINATION</a></li>
+            <li><a href="#modifications">MODIFICATIONS AND INTERRUPTIONS</a></li>
+            <li><a href="#law">GOVERNING LAW</a></li>
+            <li><a href="#disputes">DISPUTE RESOLUTION</a></li>
+            <li><a href="#corrections">CORRECTIONS</a></li>
+            <li><a href="#disclaimer">DISCLAIMER</a></li>
+            <li><a href="#liability">LIMITATIONS OF LIABILITY</a></li>
+            <li><a href="#indemnification">INDEMNIFICATION</a></li>
+            <li><a href="#userdata">USER DATA</a></li>
+            <li><a href="#electronic">ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES</a></li>
+            <li><a href="#misc">MISCELLANEOUS</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+        </ol>
+
+        <h2 id="services">1. OUR SERVICES</h2>
+        <p>The information provided when using the Services is not intended for distribution to or use by any person or entity in any jurisdiction or country where such distribution or use would be contrary to law or regulation or which would subject us to any registration requirement within such jurisdiction or country.</p>
+
+        <h2 id="ip">2. INTELLECTUAL PROPERTY RIGHTS</h2>
+        <h3>Our intellectual property</h3>
+        <p>We are the owner or the licensee of all intellectual property rights in our Services, including all source code, databases, functionality, software, website designs, audio, video, text, photographs, and graphics in the Services (collectively, the "Content"), as well as the trademarks, service marks, and logos contained therein (the "Marks").</p>
+        <p>Our Content and Marks are protected by copyright and trademark laws around the world.</p>
+        <p>The Content and Marks are provided in or through the Services "AS IS" for your personal, non-commercial use or internal business purpose only.</p>
+
+        <h3>Your use of our Services</h3>
+        <p>Subject to your compliance with these Legal Terms, we grant you a non-exclusive, non-transferable, revocable license to access the Services and download or print a copy of any portion of the Content to which you have properly gained access, solely for your personal, non-commercial use or internal business purpose.</p>
+        <p>Except as set out in this section or elsewhere in our Legal Terms, no part of the Services and no Content or Marks may be copied, reproduced, aggregated, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise exploited for any commercial purpose whatsoever, without our express prior written permission.</p>
+
+        <h3>Your submissions</h3>
+        <p>By directly sending us any question, comment, suggestion, idea, feedback, or other information about the Services ("Submissions"), you agree to assign to us all intellectual property rights in such Submission.</p>
+        <p>You are responsible for what you post or upload and confirm that you have the necessary rights to submit such Submissions.</p>
+
+        <h2 id="userreps">3. USER REPRESENTATIONS</h2>
+        <p>By using the Services, you represent and warrant that:</p>
+        <ol>
+            <li>you have the legal capacity and you agree to comply with these Legal Terms;</li>
+            <li>you are not a minor in the jurisdiction in which you reside;</li>
+            <li>you will not access the Services through automated or non-human means;</li>
+            <li>you will not use the Services for any illegal or unauthorized purpose;</li>
+            <li>your use of the Services will not violate any applicable law or regulation.</li>
+        </ol>
+
+        <h2 id="prohibited">4. PROHIBITED ACTIVITIES</h2>
+        <p>You may not access or use the Services for any purpose other than that for which we make the Services available. As a user of the Services, you agree not to:</p>
+        <ul>
+            <li>Systematically retrieve data or other content from the Services to create a collection or database without written permission from us.</li>
+            <li>Trick, defraud, or mislead us and other users.</li>
+            <li>Circumvent, disable, or interfere with security-related features of the Services.</li>
+            <li>Disparage, tarnish, or otherwise harm us and/or the Services.</li>
+            <li>Use the Services in a manner inconsistent with any applicable laws or regulations.</li>
+            <li>Engage in unauthorized framing of or linking to the Services.</li>
+            <li>Upload or transmit viruses, Trojan horses, or other harmful material.</li>
+            <li>Engage in any automated use of the system.</li>
+            <li>Delete copyright or proprietary rights notices from any Content.</li>
+            <li>Attempt to impersonate another user or person.</li>
+            <li>Harass, annoy, intimidate, or threaten any of our employees or agents.</li>
+            <li>Use the Services as part of any effort to compete with us.</li>
+        </ul>
+
+        <h2 id="ugc">5. USER GENERATED CONTRIBUTIONS</h2>
+        <p>The Services do not offer users to submit or post content. We may provide you with the opportunity to create, submit, post, display, transmit, perform, publish, distribute, or broadcast content and materials to us or on the Services ("Contributions"). By making Contributions, you represent and warrant that your Contributions do not infringe any third-party rights and comply with all applicable laws.</p>
+
+        <h2 id="license">6. CONTRIBUTION LICENSE</h2>
+        <p>You retain ownership of your Contributions, but you are responsible for them. We are not liable for any statements or representations in your Contributions.</p>
+
+        <h2 id="thirdparty">7. THIRD-PARTY WEBSITES AND CONTENT</h2>
+        <p>The Services may contain links to third-party websites and content. We are not responsible for any third-party websites or content accessed through the Services.</p>
+
+        <h2 id="sitemanage">8. SERVICES MANAGEMENT</h2>
+        <p>We reserve the right to monitor the Services for violations, take legal action against violators, and manage the Services to protect our rights and facilitate proper functioning.</p>
+
+        <h2 id="ppyes">9. PRIVACY POLICY</h2>
+        <p>We care about data privacy and security. Please review our Privacy Policy: <a href="http://www.arthursfriedchicken.com/privacy">http://www.arthursfriedchicken.com/privacy</a>. By using the Services, you agree to be bound by our Privacy Policy.</p>
+
+        <h2 id="terms">10. TERM AND TERMINATION</h2>
+        <p>These Legal Terms remain in full force while you use the Services. We may terminate or suspend your access at any time without notice.</p>
+
+        <h2 id="modifications">11. MODIFICATIONS AND INTERRUPTIONS</h2>
+        <p>We reserve the right to change, modify, or remove the contents of the Services at any time without notice. We are not liable for any modification, suspension, or discontinuance of the Services.</p>
+
+        <h2 id="law">12. GOVERNING LAW</h2>
+        <p>These Legal Terms shall be governed by and defined following the laws of the Philippines.</p>
+
+        <h2 id="disputes">13. DISPUTE RESOLUTION</h2>
+        <p>Any dispute arising from these Legal Terms shall be resolved through informal negotiation and, if necessary, binding arbitration in Midsayap, Philippines.</p>
+
+        <h2 id="corrections">14. CORRECTIONS</h2>
+        <p>We reserve the right to correct any errors, inaccuracies, or omissions on the Services at any time without prior notice.</p>
+
+        <h2 id="disclaimer">15. DISCLAIMER</h2>
+        <p>THE SERVICES ARE PROVIDED ON AN AS-IS AND AS-AVAILABLE BASIS. WE DISCLAIM ALL WARRANTIES AND ASSUME NO LIABILITY FOR ANY DAMAGES ARISING FROM YOUR USE OF THE SERVICES.</p>
+
+        <h2 id="liability">16. LIMITATIONS OF LIABILITY</h2>
+        <p>IN NO EVENT WILL WE BE LIABLE FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM YOUR USE OF THE SERVICES.</p>
+
+        <h2 id="indemnification">17. INDEMNIFICATION</h2>
+        <p>You agree to defend, indemnify, and hold us harmless from any claims arising out of your use of the Services or breach of these Legal Terms.</p>
+
+        <h2 id="userdata">18. USER DATA</h2>
+        <p>We maintain certain data you transmit to the Services. You are solely responsible for all data you transmit.</p>
+
+        <h2 id="electronic">19. ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES</h2>
+        <p>Using the Services constitutes consent to electronic communications and signatures.</p>
+
+        <h2 id="misc">20. MISCELLANEOUS</h2>
+        <p>These Legal Terms constitute the entire agreement between you and us. If any provision is deemed invalid, the remaining provisions remain in effect.</p>
+
+        <h2 id="contact">21. CONTACT US</h2>
+        <p><strong>Arthur's Fried Chicken</strong><br>
+          Poblacion 8, Midsayap, North Cotabato 9410<br>
+          Philippines<br>
+          Email: <a href="mailto:afcfranchisingcorp@gmail.com">afcfranchisingcorp@gmail.com</a><br>
+        </p>
+      </div>
+    </section>
+    
+    <footer class="red__section">
+      <div class="footer__wrapper container">
+        <div class="fb__links">
+          <h2>Follow us on Facebook!</h2>
+          <a href="https://www.facebook.com/arthursfriedchicken" target="_blank" class="btn btn__fb"><i class="fa-brands fa-facebook fa-xl"></i> AFC - Main</a>
+          <a href="https://www.facebook.com/profile.php?id=61550328491613" target="_blank" class="btn btn__fb"><i class="fa-brands fa-facebook fa-xl"></i> AFC - Davao</a>
+          <a href="https://www.facebook.com/59ersrestaurant" target="_blank" class="btn btn__fb"><i class="fa-brands fa-facebook fa-xl"></i> AFC - Cotabato</a>
+        </div>
+        
+        <div class="quick__links__wrapper">
+          <h2>Quick Links</h2>
+          <div class="quick__links">
+            <nav class="footer__nav">
+              <ul class="footer__menu">
+                <li><a href="index.html" class="footer__links">Home</a></li>
+                <li><a href="about.html" class="footer__links">About Us</a></li>
+                <li><a href="franchise.html" class="footer__links">Franchise</a></li>
+                <li><a href="locations.html" class="footer__links">Locations</a></li>
+                <li><a href="blogs.html" class="footer__links">Blogs</a></li>
+              </ul>
+            </nav>
+
+            <nav class="footer__nav">
+              <ul class="footer__menu">
+                <li><a href="privacy.html" class="footer__links">Privacy Policy</a></li>
+                <li><a href="terms.html" class="footer__links">Terms of Service</a></li>
+                <li><a href="careers.html" class="footer__links">Careers</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        
+      </div>
+      <div class="container">
+        <hr class="footer__divider">
+      </div>
+      <div class="container">
+        <p class="copyright__text">© 2025 Arthur's Fried Chicken. All rights reserved.</p>
+      </div>
+      
+    </footer>
+    
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
