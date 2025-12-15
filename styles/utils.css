@@ -93,7 +93,7 @@
     align-items: center;
     gap: 1rem;
     text-align: center;
-    width: clamp(410px, 50vw, 800px);
+    width: clamp(360px, 50vw, 800px);
     padding-top: var(--size-xs);
 }
 
