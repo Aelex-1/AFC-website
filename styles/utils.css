@@ -122,6 +122,11 @@
     align-items: center;
 }
 
+@media (min-width: 360px) {
+    .container{
+        max-width: 360px;
+    }   
+}
 
 /* XS */
 @media (min-width: 475px) {
