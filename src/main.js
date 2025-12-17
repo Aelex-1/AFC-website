@@ -18,6 +18,9 @@ import 'swiper/css/scrollbar';
 import '../styles/components/swiper.css';
 import '../styles/utils.css';
 
+import { injectSpeedInsights } from '@vercel/speed-insights';
+
+injectSpeedInsights();
 
 const navbar = document.getElementById('sidebar');
 function openSidebar() {
