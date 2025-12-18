@@ -11,9 +11,6 @@
     <link rel="manifest" href="assets/img/site.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://api.fontshare.com/v2/css?f[]=public-sans@400,500,600,700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link href="https://api.fontshare.com/v2/css?f[]=asap@700&display=swap" rel="stylesheet"> 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,12 +33,12 @@
         </nav>
 
         <a href="contact.html" class="btn btn__contact">Contact Us</a>
-        <button class="header__bar"><i class="fa-solid fa-bars fa-lg" onclick="openSidebar()"></i></button>
+        <button class="header__bar" onclick="openSidebar()"><svg class="menu__icon"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/></svg></button>
       </div>
     </header>
 
     <div id="sidebar">
-      <button class="sidebar__close"><i class="fa-solid fa-x fa-lg" onclick="closeSidebar()"></i></button>
+      <button class="sidebar__close" onclick="closeSidebar()"><svg class="close__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M504.6 148.5C515.9 134.9 514.1 114.7 500.5 103.4C486.9 92.1 466.7 93.9 455.4 107.5L320 270L184.6 107.5C173.3 93.9 153.1 92.1 139.5 103.4C125.9 114.7 124.1 134.9 135.4 148.5L278.3 320L135.4 491.5C124.1 505.1 125.9 525.3 139.5 536.6C153.1 547.9 173.3 546.1 184.6 532.5L320 370L455.4 532.5C466.7 546.1 486.9 547.9 500.5 536.6C514.1 525.3 515.9 505.1 504.6 491.5L361.7 320L504.6 148.5z"/></svg></button>
       <nav class="sidebar__nav">
           <ul>
               <li><a href="index.html" class="sidebar__links active" >Home</a></li>
@@ -61,16 +58,25 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img class="mobile-ver" src="assets/img/home-xmas-mobile.png" alt="pic">
-            <img class="desktop-ver" src="assets/img/home-xmas-wide.png" alt="pic">
+            <picture>
+              <source media="(min-width : 768px)"
+              srcset="assets/img/home-xmas-wide.png">
+              <img src="assets/img/home-xmas-mobile.png" alt="">
+            </picture>
           </div>
           <div class="swiper-slide">
-            <img class="mobile-ver" src="assets/img/home-bbq-mobile.png" alt="pic">
-            <img class="desktop-ver" src="assets/img/home-bbq-wide.png" alt="pic">
+            <picture>
+              <source media="(min-width : 768px)"
+              srcset="assets/img/home-bbq-wide.png">
+              <img src="assets/img/home-bbq-mobile.png" alt="">
+            </picture>
           </div>
           <div class="swiper-slide">
-            <img class="mobile-ver" src="assets/img/home-sisig-mobile.png" alt="pic">
-            <img class="desktop-ver" src="assets/img/home-sisig-wide.png" alt="pic">
+            <picture>
+              <source media="(min-width : 768px)"
+              srcset="assets/img/home-sisig-wide.png">
+              <img src="assets/img/home-sisig-mobile.png" alt="">
+            </picture>
           </div>
         </div>
         <div class="swiper-pagination"></div>
@@ -98,7 +104,7 @@
     <section class="red__section">
       <div class="container">
         <div class="content__wrapper">
-          <img src="assets/img/about-us.png" alt="afc fried chicken value meal">
+          <img src="assets/img/about-us.png" loading="lazy" alt="afc fried chicken value meal">
 
           <div class="text__wrapper">
             <h2>ABOUT US</h2>
@@ -118,7 +124,7 @@
     <section class="white__section">
       <div class="container">
         <div class="content__wrapper">
-          <img src="assets/img/new-store.png" alt="afc fried chicken value meal">
+          <img src="assets/img/new-store.png" loading="lazy" alt="afc fried chicken value meal">
 
           <div class="text__wrapper">
             <h2>FRANCHISING</h2>
@@ -148,7 +154,7 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="image-wrapper">
-                <img src="assets/img/featured.png" alt="pic">  
+                <img src="assets/img/featured.png" loading="lazy" alt="pic">  
               </div>
               <div class="details-wrapper">
                 <h2>How to become a successful franchise owner in 7-steps</h2>
@@ -159,7 +165,7 @@
 
             <div class="swiper-slide">
               <div class="image-wrapper">
-                <img src="assets/img/leadership.jpg" alt="pic">  
+                <img src="assets/img/leadership.jpg" loading="lazy" alt="pic">  
               </div>
               <div class="details-wrapper">
                 <h2>Building Stronger Leaders, Stronger Stores: AFC’s Ongoing Development Journey</h2>
@@ -169,7 +175,7 @@
             </div>
             <div class="swiper-slide">
               <div class="image-wrapper">
-                <img src="assets/img/2025-highlights.jpg" alt="pic">  
+                <img src="assets/img/2025-highlights.jpg" loading="lazy" alt="pic">  
               </div>
               <div class="details-wrapper">
                 <h2>AFC 2025 Highlights</h2>
@@ -179,7 +185,7 @@
             </div>
             <div class="swiper-slide">
               <div class="image-wrapper">
-                <img src="assets/img/no-entry.jpg" alt="pic">  
+                <img src="assets/img/no-entry.jpg" loading="lazy" alt="pic">  
               </div>
               <div class="details-wrapper">
                 <h2>No blog entry yet</h2>
@@ -200,9 +206,18 @@
       <div class="footer__wrapper container">
         <div class="fb__links">
           <h2>Follow us on Facebook!</h2>
-          <a href="https://www.facebook.com/arthursfriedchicken" target="_blank" class="btn btn__fb"><i class="fa-brands fa-facebook fa-xl"></i> AFC - Main</a>
-          <a href="https://www.facebook.com/profile.php?id=61550328491613" target="_blank" class="btn btn__fb"><i class="fa-brands fa-facebook fa-xl"></i> AFC - Davao</a>
-          <a href="https://www.facebook.com/59ersrestaurant" target="_blank" class="btn btn__fb"><i class="fa-brands fa-facebook fa-xl"></i> AFC - Cotabato</a>
+          <a href="https://www.facebook.com/arthursfriedchicken" target="_blank" class="btn btn__fb">
+            <svg class="fb__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <path d="M576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 440 146.7 540.8 258.2 568.5L258.2 398.2L205.4 398.2L205.4 320L258.2 320L258.2 286.3C258.2 199.2 297.6 158.8 383.2 158.8C399.4 158.8 427.4 162 438.9 165.2L438.9 236C432.9 235.4 422.4 235 409.3 235C367.3 235 351.1 250.9 351.1 292.2L351.1 320L434.7 320L420.3 398.2L351 398.2L351 574.1C477.8 558.8 576 450.9 576 320z"/></svg>
+             AFC - Main</a>
+          <a href="https://www.facebook.com/profile.php?id=61550328491613" target="_blank" class="btn btn__fb">
+            <svg class="fb__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <path d="M576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 440 146.7 540.8 258.2 568.5L258.2 398.2L205.4 398.2L205.4 320L258.2 320L258.2 286.3C258.2 199.2 297.6 158.8 383.2 158.8C399.4 158.8 427.4 162 438.9 165.2L438.9 236C432.9 235.4 422.4 235 409.3 235C367.3 235 351.1 250.9 351.1 292.2L351.1 320L434.7 320L420.3 398.2L351 398.2L351 574.1C477.8 558.8 576 450.9 576 320z"/></svg>
+             AFC - Davao</a>
+          <a href="https://www.facebook.com/59ersrestaurant" target="_blank" class="btn btn__fb">
+            <svg class="fb__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+            <path d="M576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 440 146.7 540.8 258.2 568.5L258.2 398.2L205.4 398.2L205.4 320L258.2 320L258.2 286.3C258.2 199.2 297.6 158.8 383.2 158.8C399.4 158.8 427.4 162 438.9 165.2L438.9 236C432.9 235.4 422.4 235 409.3 235C367.3 235 351.1 250.9 351.1 292.2L351.1 320L434.7 320L420.3 398.2L351 398.2L351 574.1C477.8 558.8 576 450.9 576 320z"/></svg>
+             AFC - Cotabato</a>
         </div>
         
         <div class="quick__links__wrapper">

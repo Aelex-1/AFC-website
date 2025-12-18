@@ -20,6 +20,10 @@
 }
 
 .btn__fb{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
     font-weight: 900;
     background-color: var(--clr-yellow);
     width: clamp(250px, 10vw, 800px);
@@ -120,6 +124,18 @@
 
 .page__landing .text__wrapper{
     align-items: center;
+}
+
+.fb__icon{
+    width: 2rem;
+    height: 2rem;
+    fill: currentColor;
+}
+
+.menu__icon,
+.close__icon{
+    width: 1.7rem;
+    height: 1.7rem;
 }
 
 @media (min-width: 360px) {
