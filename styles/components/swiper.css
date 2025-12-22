@@ -89,7 +89,7 @@
     --swiper-navigation-color: var(--clr-light);
 }
 
-.about-swiper {
+.about-swiper .swiper-wrapper{
     width: 350px;
     height: 400px;
 }

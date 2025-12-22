@@ -80,7 +80,6 @@ const swiperBlogs = new Swiper('.blogs-swiper', {
 
 const aboutSwiper = new Swiper('.about-swiper', {
     loop: true,
-    spaceBetween: 20,
 
     autoplay: {
     delay: 4000,
