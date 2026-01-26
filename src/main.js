@@ -23,15 +23,22 @@ import { injectSpeedInsights } from '@vercel/speed-insights';
 injectSpeedInsights();
 
 const navbar = document.getElementById('sidebar');
-function openSidebar() {
-    navbar.classList.add('show');
+const buttonSidebar = document.querySelector('.header__bar');
+const closeSidebar = document.querySelector('.sidebar__close');
 
-}
-function closeSidebar() {
-    navbar.classList.remove('show');
-}
-window.openSidebar = openSidebar;
-window.closeSidebar = closeSidebar;
+buttonSidebar.addEventListener('click', () => navbar.classList.add('show'));
+closeSidebar.addEventListener('click', () => navbar.classList.remove('show'));
+
+
+// function openSidebar() {
+//     navbar.classList.add('show');
+
+// }
+// function closeSidebar() {
+//     navbar.classList.remove('show');
+// }
+// window.openSidebar = openSidebar;
+// window.closeSidebar = closeSidebar;
 
 
 const swiper = new Swiper('.home-swiper', {
@@ -39,13 +46,13 @@ const swiper = new Swiper('.home-swiper', {
     loop: true,
 
     autoplay: {
-    delay: 4000,
+        delay: 4000,
     },
 
     // If we need pagination
     pagination: {
         el: '.swiper-pagination',
-        clickable: true, 
+        clickable: true,
     },
 
     // Navigation arrows
@@ -62,7 +69,7 @@ const swiperBlogs = new Swiper('.blogs-swiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-    breakpoints: { 
+    breakpoints: {
         0: {
             slidesPerView: 1,
             spaceBetween: 0,
@@ -82,24 +89,24 @@ const aboutSwiper = new Swiper('.about-swiper', {
     loop: true,
 
     autoplay: {
-    delay: 4000,
+        delay: 4000,
     },
 
     scrollbar: {
         el: '.swiper-scrollbar',
         draggable: true,
     },
-    
+
 })
 
 document.querySelectorAll("details").forEach((details) => {
-  details.addEventListener("toggle", () => {
-    if (details.open) {
-      document.querySelectorAll("details").forEach((other) => {
-        if (other !== details) {
-          other.open = false;
+    details.addEventListener("toggle", () => {
+        if (details.open) {
+            document.querySelectorAll("details").forEach((other) => {
+                if (other !== details) {
+                    other.open = false;
+                }
+            });
         }
-      });
-    }
-  });
+    });
 });
